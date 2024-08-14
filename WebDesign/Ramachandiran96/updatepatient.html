@@ -1,0 +1,97 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+  <title>
+   Student Management System
+  </title>
+</head>
+ <style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{background-color: rgb(223, 104, 104);
+   
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .input-container{
+    padding: 15px;
+    min-height: 30vh;
+    background-color: beige;
+  }
+  div{
+    padding: 10px;
+  }
+  form{
+    border: 2px solid black;
+    padding: 20px;
+  }
+  button{
+    border : 1px solid blue;
+    width: 100px;
+    height: 30px;
+    font-size: medium;
+    background-color: blue;
+    color: aliceblue;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-left: 30%;
+  }
+  input{
+    margin-left: 10px;
+  }
+  h1{
+    margin-left: 500px;
+   
+  }
+
+ </style>
+ <body>
+ 
+ <div class="container">
+  <div class="input-container">
+ <form th:action="@{/patient/edit}" th:object="${Obj}" method="POST">
+  <h4>PATIENT UPDATION FORM</h4><br>
+  <div>
+ <label>Name</label>
+ <input type="text"
+name="name" 
+th:field=*{name} />
+</div>
+<div>
+ <label>address</label>
+  <input type="text"
+address="address" 
+th:field=*{address} />
+</div>
+<div>
+ <label>Age</label>
+  <input type="age"
+age="age" 
+th:field=*{age} />
+</div>
+<div>
+<label>Mobile</label>
+  <input type="moblileNumber"
+moblileNumber="moblileNumber" 
+th:field=*{moblileNumber} /><div class="button">
+</div>
+ <button type ="submit">Submit</button>
+ </div>
+
+ </form>
+</div>
+</div>
+
+ 
+
+
+
+ </body>
+</html>
+  

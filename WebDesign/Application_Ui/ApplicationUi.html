@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <style>
+    #home{
+       /* background-image: url("https://img.freepik.com/premium-photo/digital-technology-futuristic-banner-with-circuit-lines_327072-25011.jpg"); */
+      /* background-color: black !important; */
+      background-color: rgb(187, 187, 243);
+      background-size: cover;
+      height: 1000px;
+      background-repeat: no-repeat !important;
+    }
+    h2 {
+  text-align: center;
+  font: bold 80px Sans-Serif;
+  padding: 40px 0;
+}
+
+.simple {
+  background: #91877b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.otto {
+  background: #0e8dbc;
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(243, 13, 13, 0.1),
+               0 0 5px rgba(228, 44, 44, 0.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.relief {
+  background-color: #3a50d9;
+  color: #e0eff2;
+  font: italic bold 100px Georgia, Serif;
+  text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+}
+
+.close {
+  background-color: #fff; 
+  color: #202c2d;
+  text-shadow:
+    0 1px #808d93,
+    -1px 0 #cdd2d5,
+    -1px 2px #808d93,
+    -2px 1px #cdd2d5,
+    -2px 3px #808d93,
+    -3px 2px #cdd2d5,
+    -3px 4px #808d93,
+    -4px 3px #cdd2d5,
+    -4px 5px #808d93,
+    -5px 4px #cdd2d5,
+    -5px 6px #808d93,
+    -6px 5px #cdd2d5,
+    -6px 7px #808d93,
+    -7px 6px #cdd2d5,
+    -7px 8px #808d93,
+    -8px 7px #cdd2d5;
+}
+
+.printers {
+  background-color: #edde9c;
+  color: #bc2e1e;
+  text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+
+.glow {
+  color: #444;
+  text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+}
+
+.vamp {
+  color: #92a5de;
+  background: red;
+  text-shadow:0px 0px 0 rgb(137,156,213),1px 1px 0 rgb(129,148,205),2px 2px 0 rgb(120,139,196),3px 3px 0 rgb(111,130,187),4px 4px 0 rgb(103,122,179),5px 5px 0 rgb(94,113,170),6px 6px 0 rgb(85,104,161),7px 7px 0 rgb(76,95,152),8px 8px 0 rgb(68,87,144),9px 9px 0 rgb(59,78,135),10px 10px 0 rgb(50,69,126),11px 11px 0 rgb(42,61,118),12px 12px 0 rgb(33,52,109),13px 13px 0 rgb(24,43,100),14px 14px 0 rgb(15,34,91),15px 15px 0 rgb(7,26,83),16px 16px 0 rgb(-2,17,74),17px 17px 0 rgb(-11,8,65),18px 18px 0 rgb(-19,0,57),19px 19px 0 rgb(-28,-9,48), 20px 20px 0 rgb(-37,-18,39),21px 21px 20px rgba(0,0,0,1),21px 21px 1px rgba(0,0,0,0.5),0px 0px 20px rgba(0,0,0,.2);
+}
+    .iu{
+      margin-top: -700px;
+      margin-left: 1000px;
+      padding: 100px;
+   
+    }
+#courses{
+  background-color: rgb(250, 250, 141);
+  background-size: 100%;
+}
+    /* .gridlearn{
+      display: grid;
+      grid-template-columns: auto auto 200px 150px;
+      grid-gap:10px;
+    } */
+    .card{
+      margin-left: 18%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 2px solid black !important;
+      box-shadow: 2px 3px 14px black;
+      margin-top: 45px;
+    }
+    .card-body{
+      padding: 5px;
+      margin-left: 15%;
+      
+    }
+    #interview{
+      background-color: rgb(238, 189, 154);
+      background-size: cover;
+      padding: 10px;
+    }
+    #interview img{
+      padding: 15px;
+    }
+    #er{
+      display: grid;
+      grid-template-columns: repeat(2fr,4);
+    }
+   
+  </style>
+
+  </head>
+<body>
+
+<section id="home">
+<nav class="navbar bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="https://img.freepik.com/premium-vector/letter-f-initial-icon-logo-template_23987-54.jpg" width="20px" alt="">FIROCIUS.tech</a>
+            <!-- <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+            </div> -->
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs">
+              <div class="lh_bannerhead_menu">
+                  <nav class="navbar navbar-expand-lg">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                  <a class="nav-link lhlink" href="#career_transitions" title="Career Transition">Career Transition</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link lhlink" href="#nonits" title="Non-IT To IT">Non-IT To IT</a>
+                              </li>
+                               <li class="nav-item active">
+                                  <a class="nav-link lhlink" href="#job_guarantees" title="Job Guarantee">Job Guarantee</a>
+                              </li>
+                              <li class="nav-item active">
+                                  <a class="nav-link lhlink" href="#corptraining" title="Corporate Training">Corporate Training</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#testimonials" title="Testimonials">Testimonials</a>
+                              </li>
+                              <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                              
+                          </ul>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+            
+          </div>
+        
+        
+      </nav>
+      
+      <nav class="navbar" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+      </nav>
+      <section class="lh_banner">
+        <!-- <div class="lh_banner_bg d-none d-lg-block">
+            <img class="img-fluid" alt="Banner" src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing-homepage/banner_strip.webp" loading="lazy" width="1349" height="150px" >
+        </div> -->
+        <div>
+          <h2 style="text-shadow: 2px 2px 3px rgb(250, 186, 9);"><img src="https://img.freepik.com/premium-vector/letter-f-initial-icon-logo-template_23987-54.jpg"width=100px alt="">FIROCIUS.tech</h2>
+        </div>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs">
+                <!-- <div class="lh_bannerhead_logo">
+                    <img class="img-fluid" alt="Besant Technologies" title="Besant Technologies | No.1 Training Institute in Chennai, Bangalore & Pune" src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing-homepage/logo.webp" width="230px" height="50px"> 
+                </div> -->
+            </div>
+           
+            <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs">
+                <div class="lh_banercontent">
+                    <h1>Software Training & 100% Placements</h1>
+                    <h2>Get a Job - <span>Guaranteed!</span></h2>
+                    <p>Enroll Now for Trending Courses with Job Assurance</p>
+                    <p>15+ Years experience in Software Training & Placements</p>
+            <p>Avail Both Classroom & Online Courses</p>
+            <p>20+ Branches in Chennai & Bangalore</p>
+                    <a href="#" data-toggle="modal" data-target="#enqModal" data-modalnewtitle="Get Course Fees &amp; Discounts" data-gaeventcate="leadModalOpen" data-gaeventlabel="feesRequestMidBody" title="Enroll Now">Enroll Now</a>
+                    
+                    <!-- a href="/submit-your-cv" title="Job Seekers" target="_blank" style="background: #ff7f06;color: #fff;">Job Seekers</a -->
+                </div>
+            </div>
+            <div class="iu">
+              <div class="lh_bannerdiv">
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs">
+                  <div class="lh_bannerbox text-center">
+                     <span><img class="img-fluid" alt="1000+ Jobs in Top Companies" src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing-homepage/Jobs.webp" width="50px" height="50px"></span>
+                      <h3>10000+ Jobs in<br/> Top Companies</h3>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs">
+                  <div class="lh_bannerbox text-center">
+                      <span><img class="img-fluid" alt="Career Mentoring and Interview Preparation" src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing-homepage/Interview.webp" width="50px" height="50px"></span>
+                      <h3>Career Mentoring</h3>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs">
+                <div class="lh_bannerbox text-center">
+                    <span><img class="img-fluid" alt="Career Mentoring and Interview Preparation" src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing-homepage/Interview.webp" width="50px" height="50px"></span>
+                    <h3>Interview Preparation</h3>
+                </div>
+            </div>
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs">
+                  <div class="lh_bannerbox text-center border-0">
+                      <span><img class="img-fluid" alt="2000+ Hiring Partners" src="https://www.besanttechnologies.com/wp-content/themes/besanttechnology/assests/images/landing-homepage/hiring-partners.webp" width="50px" height="50px" ></span>
+                      <h3>2000+ Hiring Partners</h3>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>  
+        </div>
+   
+    </section>
+            
+</section>
+<div></div>
+<section id="courses">
+  <div id="gridlearn">
+  <div class="card border-danger mb-3" style="max-width: 48rem;">
+    <div class="card-header">JAVA</div>
+    <div class="card-body text-danger">
+      <h5 class="card-title">Java-Programming-Language</h5>
+      <p class="card-text">Used for Software Applications / Web-Application</p>
+      <img src="https://www.gcreddy.com/wp-content/uploads/2021/05/Java-Programming-Language.png" width="150px" height="100px" style="margin-left: 20px; background-color: blanchedalmond;" alt="">
+      <div class="card-body text-danger">45000 INR/- (4 months - 3hrs) online/offline</div>
+    </div>
+  </div>
+  <div class="card border-warning mb-3" style="max-width: 48rem;">
+    <div class="card-header">python</div>
+    <div class="card-body">
+      <h5 class="card-title">python programming</h5>
+      <p class="card-text">Used for AI / Machine Learning</p>
+      <img src="https://www.makemoney.ng/wp-content/uploads/2022/08/Python.png" width="150px" height="100px" style="margin-left: 20px; background-color: blanchedalmond;"alt="">
+      <div class="card-body text-danger">55000 INR/- (3 months - 2hrs) online/offline</div>
+
+    </div>
+  </div>
+  <div class="card border-info mb-3" style="max-width: 48rem;">
+    <div class="card-header">AWS</div>
+    <div class="card-body">
+      <h5 class="card-title">amazon web services</h5>
+      <p class="card-text">Used for cloud oriented</p>
+      <img src="https://assets.intersystems.com/dims4/default/a9dad27/2147483647/strip/true/crop/780x422+0+0/resize/780x422!/quality/90/?url=http%3A%2F%2Finter-systems-brightspot.s3.amazonaws.com%2F26%2Fbd%2F6a6aa762425f87ad7d5c2fe65f8c%2Fawslogo-image.jpg" width="150px" height="100px" style="margin-left: 20px; background-color: blanchedalmond";alt=" ">
+      <div class="card-body text-danger">65000 INR/- (4 months - 3hrs) online/offline</div>
+
+  </div>
+  </div>
+  
+  <div class="card border-dark mb-3" style="max-width: 48rem;">
+    <div class="card-header">Front-end Development</div>
+    <div class="card-body">
+      <h5 class="card-title">html/css/javascript</h5>
+      <img src="https://qph.cf2.quoracdn.net/main-qimg-c05bbef17282b96d4a9cd0003694d39d" width="150px" height="100px" style="margin-left: 20px; background-color: blanchedalmond";>
+      <div class="card-body text-danger">65000 INR/- (6 months - 3.5hrs) online/offline</div>
+
+  </div>
+</div>
+
+
+</section>
+<section id="interview">
+  <p>Clients across indian mncsv</p>
+  <img src="https://mma.prnewswire.com/media/1477373/TCS_Logo.jpg?p=facebook" width="200px" height="200px" alt="">
+  <img src="https://www.drupal.org/files/infosys-logo-PNG.png" width="200px" height="200px" alt="">
+  <img src="https://mma.prnewswire.com/media/1794711/Cognizant_Logo.jpg?p=facebook" width="200px" height="200px" alt="">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" width="200px" height="200px" alt="">
+  <img src="https://www.livelaw.in/h-upload/2022/01/14/407638-hcl-final.jpg" width="200px" height="200px" alt="">
+  <img src="https://mma.prnewswire.com/media/633364/Mindtree_Logo.jp?p=facebook" width="200px" height="200px" alt="">
+<img src="https://yt3.googleusercontent.com/KN7T3ZjoSP8XWZfj0qZbzfyLErknBXKZrZB1P9fBnp88OJJuQ-azKZyH3nQMN1ue-SkVc-IxvLk=s900-c-k-c0x00ffffff-no-rj" width="200px" height="200px" alt="">
+<img src="https://www.drupal.org/files/Capgemini_Logo_2COL_RGB.png" width="200px" height="200px" alt="">
+<img src="https://content3.jdmagicbox.com/comp/bangalore/48/080p5603748/catalogue/accenture-services-pvt-ltd-bellandur-bangalore-call-centres-s1dm03int7.jpg" width="200px" height="200px" alt="">
+<img src="https://www.investopedia.com/thmb/Z2FTZcEWsn2-pxFq2G9XB0-qe4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ford-logo-082222-a8355a1f61b245ca831fe0097a382cf5.jpg" width="200px" height="200px" alt="">
+<img src="https://www.educba.com/academy/wp-content/uploads/2023/03/Full-Form-of-LT.jpg" width="200px" height="200px" alt="">
+<img src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-02/14/full/1550162947-7329.jpg?im=FeatureCrop,size=(826,465)" width="200px" height="200px" alt="">
+<img src="https://www.inspirisys.com/images/inspirisys-logonew.png" height="200px" width="200px" alt="">
+<img src="https://yt3.googleusercontent.com/ZZE-4RYOIhFUE29k6wxh7xktniVmSwSdwzOxlJVGJZwN1I0sZuQvovdyk8aHKO31fwQ9bU_aOg=s900-c-k-c0x00ffffff-no-rj" width="200px" height="200px" alt="">
+<img src="data:image/jpeg;base64,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" alt="">
+
+
+</section>
+<section id="grid">
+  <div id="er">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo, reiciendis dolor non soluta dolorum perferendis numquam libero aut! Corporis fugiat quaerat at est incidunt minus molestiae obcaecati mollitia sunt.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ut, iure ullam suscipit cumque tempore eligendi pariatur atque earum id minima modi perspiciatis nihil doloremque officiis ex. Impedit, inventore facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium eum sint enim libero debitis temporibus at fugit qui ratione, neque error ipsum repellat provident nulla cupiditate est corporis itaque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, repellendus praesentium quaerat placeat, illo necessitatibus possimus asperiores natus blanditiis ullam suscipit temporibus explicabo dolor amet. Est nesciunt delectus ipsa totam?</p>
+  </div>
+</section>
+
+</body>
+</html>

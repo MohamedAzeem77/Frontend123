@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClockGame</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #p1{
+           width: 160px;
+           height: 60px;
+           background-color: rgb(244, 223, 197);
+           border: 2px solid rgb(3, 2, 0);
+           margin-left: 30px;
+           padding: 8px;
+           font-size: 23px;
+           margin-left: 10%;
+            margin-right: 10%;
+            color: rgb(255, 42, 0);
+            text-emphasis-color: green;
+            text-shadow: 2px 7px 22px black;
+            font-weight: 10px;
+            text-decoration: overline;
+        }
+        h2{
+            margin-top: 10%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 10%;
+
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            margin-top: 30px;
+            background-color: blue;
+            border-radius: 10px;
+            color: #f2eded;
+            box-shadow: 2px 3px 4px black;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        button:hover{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>CLOCK GAME EXCERCISE</h2>
+    <p id="p1"></p>
+    <button onclick=" return start()">Start</button>
+    <button onclick="return stop()">Stop</button>
+    <script>
+        function changeColor(){
+        date=new Date();
+        hour=date.getHours();
+        minute=date.getMinutes();
+        second=date.getSeconds();
+        timing=date.toLocaleTimeString();
+        x=document.getElementById("p1")
+        x.innerHTML=timing;
+
+        if(second%2==0){
+            x.style.color="red";
+        }
+        else{
+            x.style.color="blue";
+        }
+    }
+    function start(){
+        clear=setInterval(changeColor,1000);
+    }
+    function stop(){
+        clearInterval(clear);
+    }
+    </script>
+    
+</body>
+</html>

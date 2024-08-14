@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnJavascript</title>
+
+</head>
+<body>
+
+
+    <div class="container">
+    <form action="" onsubmit="store()">
+       name: <input type="text" name="" id="name">
+       <!-- phone: <input type="number" name="" id="number">
+       country: <select id="country">
+        <option value="">Asian</option>
+        <option value="">African</option>
+        <option value="">American</option>
+        <option value="">Australian</option>
+        <option value="">Europian</option>
+        </select> -->
+        <!-- <button type="submit" onclick="store()">submit</button>  -->
+        <button type="submit" onclick=" return store()">Go</button>
+
+    </form>
+        <div>
+            <p id="answer"></p>
+        </div>
+    </div>
+
+        <script>
+            function store(){
+                let a=document.getElementById("name").value 
+                document.getElementById("answer").innerHTML=a;
+                // // event.preventDefault;
+               
+                // let b=document.getElementById("phone").value
+                //  document.getElementById("answer").innerHTML=b;
+                // //  event.preventDefault
+                // let c=document.getElementById("country").value 
+                // document.getElementById("answer").innerHTML=c;
+                // // event.preventDefault();
+                return false;
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- <input id="hello" type="text" placeholder="Enter the data"><br><br>
+
+    <button onclick="show()">submit</button>
+
+    <p id="save"></p>
+
+
+    <script>
+        function show(){
+            let s=document.getElementById("hello").value  
+            document.getElementById("save").innerHTML=s;
+        }
+    </script> -->
+
+
+</body>
+</html>

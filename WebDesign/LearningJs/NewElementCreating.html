@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElementCreation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            padding: 5px;
+            min-height: 50vh;
+        }
+        input{
+            width: 250px;
+            height: 50px;
+        }
+        button{
+            background-color: blue;
+            color: bisque;
+            box-shadow: 2px 3px 4px black;
+            width: 50px;
+            height: 50px;
+        }
+        button:hover{
+            background-color: chartreuse;
+        }
+        #mydiv{
+            border: 2px solid yellow;
+            width: 250px;
+            height: 250px;
+            background-color: darkkhaki;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="mydiv">
+
+        </div>
+        <input type="text" name="" id="textinput" placeholder="Enter any data">
+        <button onclick="return add()" type="submit">Submit</button>
+    </div>
+    <script>
+    function add(){
+        a=document.getElementById("textinput").value
+        b=document.createElement("p")
+        c=document.createTextNode(a)
+        b.appendChild(c);
+
+        h=document.getElementById("mydiv")
+        h.appendChild(b)
+    }
+</script>
+    
+</body>
+</html>

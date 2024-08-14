@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PracticalJs</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: blanchedalmond;
+            padding: 5px;
+        }
+        .container{
+            display: flex;
+            padding: 5px;
+           justify-content: center;
+           align-items: center;
+        }
+        .input-container{
+            margin: 15px 0;
+            min-height: 50vh;
+            padding: auto;
+            
+        }
+        input{
+            width: 200px;
+            box-shadow: 2px 3px 2px;
+            padding: 3px;
+            color: brown;
+        }
+        form{
+            border: 1px solid black;
+            padding: 30px;
+            width: 300px;
+            height: 400px;
+            background-color: rgb(105, 187, 105);
+            box-shadow: 2px 3px 4px black;
+        }
+        .myId{
+            padding: 10px;
+        }
+        button{
+            width: 150px;
+            height: 30px;
+            padding: 3px;
+            margin-top: 20px;
+            margin-left: 30px;
+            color: azure;
+            background-color: blue;
+            box-shadow: 3px 2px 4px black;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>ITS A PRACTICE</h2>
+    <div class="container">
+        <div class="input-container">
+        <form action="javascript: "onsubmit="show()">
+        <input placeholder="Enter id : ">
+        <div id="myId">
+            Name: <input type="text" name="" id="name">
+            Qualification: <input type="text" name="" id="quali">
+            Place: <input type="text" name="" id="place">
+            Dob: <input type="date" name="" id="dob">
+        </div>
+        <button type="submit" onclick="return show()">Submit</button>
+        <button type="reset" onclick="return clean()">Reset</button>
+    </form>
+</div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <script>
+        function show(){
+            let a=document.getElementById("myId");
+            box=a.getElementsByTagName("input");
+            data=document.getElementsByTagName("p");
+
+            for(i=0;i<=box.length;i++){
+                data[i].innerHTML=box[i].value;
+                
+            }
+            return false;
+        }
+        function clean(){
+            for(i=0;i<=box.length;i++){
+                data[i].innerHTML=" ";
+                box[i].value=" ";
+            }
+            return false;
+        }
+    </script>
+    
+</body>
+</html>

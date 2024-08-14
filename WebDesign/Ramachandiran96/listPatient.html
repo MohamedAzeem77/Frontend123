@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+  <title>
+   HospitalManagement 
+  </title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+ </head>
+ <body>
+<h1>WELCOME</h1>
+ <a th:href="@{/patient/new}">Add Patient</a>
+ <table class = "table table-striped table-bordered">
+ <thead class="table-dark">
+ <th>Name</th>
+ <th>Address</th>
+ <th>age</th>
+ <th>moblileNumber</th>
+ <th> Actions</th>
+ </thead>
+ </tr> 
+ 
+ <tr th:each="patient:${(patientObj)}">
+ <td th:text="${patient.Name}"></td>
+ <td th:text="${patient.Address}"></td>
+ <td th:text="${patient.age}"></td>
+ <td th:text="${patient.moblileNumber}"></td>
+ <td><a th:href="@{patient/edit/{id}(id=${patient.patient_id})}"/>update</a>
+            <a th:href="@{patient/delete/{id}(id=${patient.patient_id})}"/>Delete</a>
+            </td>
+  </tr>
+     
+ 
+  
+ </table>
+ </body>
+ </html>

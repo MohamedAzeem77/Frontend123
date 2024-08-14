@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search Bar</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <input type="text" id="search-input" placeholder="Search..." style="padding: 10px; font-size: 18px;">
+    </div>
+
+    <script>
+        document.getElementById('search-input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                let searchQuery = document.getElementById('search-input').value;
+                window.location.href = `https://www.google.com/search?q=${searchQuery}`;
+            }
+        });
+    </script>
+</body>
+</html>

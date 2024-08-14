@@ -1,0 +1,197 @@
+/* .form-control {
+    width: 100%;
+    width: 300px;
+    } */
+    .navbar-brand {
+    margin-top: 20px;
+    }
+ 
+    .glyphicon {
+    line-height: 1;
+    font-size: large;
+    }
+    .bg-body-tertiary {
+        
+        --bs-bg-opacity: 0 !important;
+        }
+        .form-control {
+           
+            width: 300px !important;
+            }
+        
+            .navbar-brand {
+            font-size: 25px !important;
+            text-shadow: 2px 2px 2px red;
+            }
+
+.container{
+    display: flexbox;
+    margin-top: 100px;
+    margin-left: 32% !important;
+    padding: 10px;
+
+}
+.container h1{
+    padding: 20px;
+    font-size: 40px !important;
+    text-shadow: 2px 2px 2px rgb(169, 139, 139);
+}
+.container input{
+    width: 500px !important;
+    height: 50px ;
+    box-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    border-radius: 3px !important;
+}
+.container button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 2px;
+    text-shadow: 2px 2px 2px rgb(20, 20, 19);
+    background-color: rgb(143, 143, 226);
+    color: aliceblue;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+.container button:hover{
+    background-color: rgb(242, 242, 42);
+}
+.container i{
+    font-size: 50px !important;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+body{
+    background-color: rgb(228, 239, 204) !important;
+}
+.nav-item{
+    font-size: 15px;
+}
+.fa-sharp fa-solid fa-wheat-awn fa-2xl{
+    font-size: 30px !important;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    font-size: 2rem;
+}
+.input-container input{
+    height: 5rem;
+    width: 30%;
+    max-width: 300rem !important;
+    border-radius: 5px ;
+    box-shadow: 2px 2px ;
+    margin-left: -45px;
+    margin-bottom: 80px;
+}
+.input-container button{
+    height: 4rem;
+    width: 8rem;
+    margin-left: 1rem;
+    background-color: rgb(109, 109, 238);
+    color: bisque;
+    text-shadow: 2px 2px 2px black;
+    margin-top: -80px;
+}
+.input-container i{
+    margin-right: 6rem;
+    margin-bottom: 80px;
+  
+}
+.text-center i{
+   margin-top: 30px !important;
+}
+.container-h a{
+    font-size: 45px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:50px;
+    text-shadow: 2px 2px 3px black;
+    margin-top: 160px;
+    margin-left: -6%;
+}
+
+@media screen and  (max-width:480px){
+    .container{
+        display: flexbox;
+        margin-top: 40% !important;
+        margin-left: 1% !important;
+        padding: 15px;
+    
+    }
+    .container input{
+        width: 400px !important;
+        height: 60px ;
+        box-shadow: 2px 2px 2px black;
+        font-size: 20px !important;
+        border-radius: 3px !important;
+        margin-left: 20px;
+    }
+    .container i{
+        font-size: 40px !important;
+        padding: 20px;
+        text-shadow: 2px 2px 2px black;
+    }
+    .container h1{
+        padding: 30px;
+        font-size: 50px !important;
+        text-shadow: 2px 2px 2px rgb(169, 139, 139);
+    }
+    .container button:hover{
+        background-color: rgb(242, 242, 42);
+    }
+    .navbar-brand {
+        margin-top: 40px;
+      
+        }
+        .bg-body-tertiary {
+        
+            --bs-bg-opacity: 1 !important;
+            
+            }
+
+            .input-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 70vh;
+                font-size: 3rem;
+            }
+            .input-container input{
+                height: 6rem;
+                width: 90%;
+                max-width: 300rem !important;
+                border-radius: 15px ;
+                box-shadow: 2px 2px ;
+                margin-left: -160px;
+                padding: 1rem;
+                margin-bottom: 480px;
+            }
+            .input-container button{
+                height: 5.3rem;
+                width: 12rem;
+                margin-left: -26rem;
+                margin-top: -29rem;
+                background-color: rgb(109, 109, 238);
+                color: bisque;
+                text-shadow: 2px 2px 2px black;
+                padding: 5px;
+            }
+            .input-container i{
+                margin-right: 1rem;
+                margin-left: -150px;
+            }
+           .input-container i{
+                opacity: 0;
+                margin-left: -20px;
+            }
+            .text-center i{
+                margin-top:250px;
+            }
+}

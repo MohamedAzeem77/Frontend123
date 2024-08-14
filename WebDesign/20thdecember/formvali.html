@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: blueviolet;
+        }
+        .container{
+            margin: 15px 0;
+            padding: 30px;
+            display: flex;
+            margin-top: 20%;
+        }
+        form{
+           
+            min-height: 20vh;
+            background-color: aliceblue;
+            margin-left: 30%;
+            border-radius: 5px;
+            margin-top: -10%;
+            box-shadow: 2px 2px 3px black;
+        }
+        div{
+            padding: 20px;
+        }
+        input{
+            border-radius: 2px;
+            text-align: center;
+            box-shadow: 2px 2px;
+            padding: 0px 10px;
+            height: 30px;
+            width: 220px;
+            font-size: 21px;
+            color: tomato;
+            background-color: rgb(255, 255, 255);
+        }
+        button{
+            width: 220px;
+            height: 30px;
+            background-color: blue;
+            color: bisque;
+            font-size: 21px;
+            font-weight: bolder;
+        }
+        H1{
+            margin-left: 20%;
+            padding: 20px;
+            color: darkred;
+            text-shadow: 2px 2px 3px rgb(114, 81, 143);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form  action=messagepage.html onsubmit="return show()">
+        <h1 class="text-center">LOGIN</h1>
+        <div>
+           
+            <input type="text" name="name" id="name">
+        </div>
+        <!-- <div>
+           
+            <input type="text" name="email" id="email" placeholder="email">
+        </div>
+        <div>
+           
+            <input type="text" name="password" id="password" placeholder="password">
+        </div>-->
+        <div>
+            <button type="submit" onclick=" return show()">Submit</button>
+        </div> 
+    </form>
+</div>
+
+    <script>
+        function show(){
+            let a=document.getElementById("name").value
+            // let b=document.getElementById("email").value
+            // let c=document.getElementById("password").value
+            if(a==" "){
+                alert("Name must be filled out");
+                     return false;
+            }else{
+                true;
+            }
+        }
+    </script>
+</body>
+</html>

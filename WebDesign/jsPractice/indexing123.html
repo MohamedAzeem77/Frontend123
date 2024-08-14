@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h1 id="title">Hello world</h1>
+    <!-- <p id="one">
+        hello guys
+    </p> -->
+    <button onclick="change()">change</button>
+    <script>
+      var para=document.getElementById("title")
+      console.log(para.textContent)
+      para.textContent="Byeworld";
+
+      function change(){
+        document.getElementById("title").textContent="zero";
+      }
+
+function add(){
+   let a= document.getElementById("num1").value
+   let b= document.getElementById("num2").value
+   let c= document.getElementById("result")
+    let sum=a+b;
+    console.log(sum)
+    c.textContent=sum;
+}
+
+
+</script>
+<hr>
+    <div>
+        <input type="text" , id="num1">
+        <input type="text" , id="num2">
+        <button onclick="add()">add</button>
+        <p id="result">result</p>
+    </div>
+</body>
+</html>

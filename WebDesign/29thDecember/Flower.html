@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30vh;
+        }
+        form{
+            border: 2px solid rgb(27, 109, 27);
+            padding: 30px;
+            background-color: cornsilk;
+            font-size: 21px;
+            text-shadow: 2px 2px 2px whitesmoke;
+            box-shadow: 2px 2px 12px black;
+        }
+        label{
+            background-color:rgb(246, 237, 237);
+            color: rgb(26, 26, 27);
+            text-shadow: 2px 2px 2px rgb(23, 24, 23);
+            
+        }
+        div{
+            padding: 10px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        button{
+            padding: 05px;
+            max-width: 100%;
+            width: 300px;
+            margin: 10px;
+            background-color: blue;
+            color: rgb(246, 234, 232);
+            box-shadow: 2px 2px 2px rgb(255, 255, 255);
+            padding: 10px;
+            animation-delay: 2s;
+
+        }
+    
+        h2{
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+        #name{
+            margin-left: 52px;
+        }
+        #password{
+            margin-left: 14px;
+        }
+       #dob{
+        margin-left: 60px;
+       }
+       #male{
+        margin-left: 40px;
+        
+       }
+       body{
+        background-color: bisque;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="javascript:" onsubmit="accept()">
+            <h2>STUDENT FORM</h2>
+            <div>
+                <label for="">Name</label>
+                <input type="text" name="" id="name"></input>
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="text" name="" id="password"></input>
+            </div>
+            <div>
+                <label for="">DOB</label>
+                <input type="date" name="" id="dob"></input>
+            </div>
+            <div>
+                <label for="" name="male">Gender</label>
+                <input type="checkbox" name="male" id="male">male</input>
+                <input type="checkbox" name="male" id="female">female</input>
+
+            </div>
+            <button type="submit" onclick="return accept()">Submit</button>
+        </form>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <!-- <div id="iop"></div> -->
+ 
+    <script>
+        function accept(){
+            let a=document.getElementsByTagName("input");
+            let c=document.getElementsByName("male");
+            let b=document.getElementsByTagName("p");
+
+            for(i=0;i<a.length;i++){
+                b[i].innerHTML=a[i].value;
+               if(c.checked==true){
+                b[i].innerHTML=c[i].value;
+               }
+            }
+            return false;
+        }
+    </script>
+    
+</body>
+</html>

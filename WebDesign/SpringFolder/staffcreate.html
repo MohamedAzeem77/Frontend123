@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+            
+        }
+        .input-container{
+            padding: 15px;
+            justify-content: center;
+        }
+        form{
+            border: 2px solid black;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form th:action="@{/staff/new_add}" th:object="${addstaffObj}" method="POST">
+        <div class="input-container">
+            <label for="">name : </label>
+            <input type="text" name="name" th:field="*{name}">
+        </div>
+        <div class="input-container">
+            <label for="">designation : </label>
+            <input type="text" name="designation" th:field="*{designation}">
+        </div>
+        <div class="input-container">
+            <label for="">salary : </label>
+            <input type="number" name="salary" th:field="*{salary}">
+        </div>
+        <div>
+        <button type="submit">submit</button>
+        </div>
+    </form>
+ </div>
+
+    
+</body>
+</html>

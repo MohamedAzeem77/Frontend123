@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormWithJs</title>
+<style>
+    /*            class-name for js property */
+    .myclass1{ 
+    width: 230px;
+    background-color: rgb(244, 244, 202);
+    color: red;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <input placeholder="Enter Id:"><br><br>
+
+        <div id="mydiv">
+            <input placeholder="Enter name ">
+            <input placeholder="Enter Mobile">
+            <input placeholder="Enter Age">
+        </div>
+        <button onclick=" return post()">submit</button>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <script>
+            function post(){
+                area=document.getElementById("mydiv")
+                box=area.getElementsByTagName("input");
+                data=document.getElementsByTagName("p");
+
+
+                for(i=0;i<box.length;i++){
+                    data[i].innerHTML=box[i].value;
+                    // data[i].style.color="red";  css inside js 
+                    data[i].className="myclass1";
+                    console.log(i);
+                }
+                return false;
+            }
+        </script>
+    </div>
+
+
+    
+</body>
+</html>

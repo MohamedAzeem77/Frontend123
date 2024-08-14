@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxGame</title>
+    <style>
+         div{
+            background-color: black;
+            width:300px;
+            height: 300px;
+        } 
+        .boxwidth{
+            width: 900px;
+            transition: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    
+    <button onclick="change()">change</button>
+    
+    <script>
+
+        //select box
+
+        var box=document.getElementById("box")
+        
+        function change(){
+        //    box.style.backgroundColor="orange"
+        box.setAttribute("class","boxwidth");
+        }
+
+    </script>
+</body>
+</html>

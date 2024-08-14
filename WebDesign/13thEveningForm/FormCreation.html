@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <select name="" id="Alpha">
+    <option value="Abcd">Abcd</option>
+    <option value="Defg">Defg</option>
+    <option value="Hijk">Hijk</option>
+    <option value="Lmno">Lmno</option>
+</select>
+<p id="result"></p>
+
+<script>
+let int=document.querySelector('#Alpha')
+let letters=int.options[int.selectedIndex]
+
+
+result.innerHTML=letters.value;
+</script> -->
+<input></input>
+<input></input>
+<select id="gender">
+    <option value="male">male</option>
+    <option value="female">female</option>
+    <option value="transgender">transgender</option>
+    <option value="LGBT">LGBT</option>
+</select>
+<button onclick="return show()"></button>
+    <p id="choose"></p>
+    <!-- <p></p>
+    <p></p> -->
+
+    <script>
+        function show(){
+            let a=document.querySelector('#gender')
+            let gen=a.options[a.selectedIndex].value
+            // let c=document.getElementsByTagName("input").value
+            // let d=document.getElementsByTagName("p")
+
+            // for(i=1;i<c.length;i++){
+            //         d[i].innerHTML=c[i]
+            // }
+            let b=document.getElementById("choose")
+            
+            b.innerHTML=gen;
+           
+        }
+    </script>
+</body>
+</html>

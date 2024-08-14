@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../Website_Practice/website_making.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-wheat-awn fa-2xl" style="color: #ff7800;"></i>GO__BRO_GO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      
+                    </a> -->
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                    </ul>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i></button>
+                </form>
+                <div class="">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa-solid fa-house fa-2xl"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa-brands fa-youtube fa-2xl" style="color: #e01b24;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #1c71d8;"></i></a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></a>
+                      </li>
+                      <li><a class="nav-item" href="#"><span class="glyphicon glyphicon-user-"></span> Sign Up</a></li>
+                      <li><a  class="nav-item"   href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    
+                </ul> 
+            </div>     
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container-h">
+      <a><i class="fa-sharp fa-solid fa-wheat-awn fa-2xl" style="color: #ff7800;"></i>GO__BRO_GO</a>
+
+   <div class="input-container">
+
+     <i class="uil uil-search"></i>
+    <input type="text" id="search" placeholder="search"></input>
+    <button class="button"  onclick=" return googleSearch()">search</button>
+   </div>
+  </div>
+
+  <script>
+    function googleSearch(){
+    let a=document.getElementById("search")
+    let query=a.value 
+    let url=`https://www.google.com/search?q=${query}`;
+    window.open(url, '_blank');
+  }
+    </script>
+</body>
+</html>

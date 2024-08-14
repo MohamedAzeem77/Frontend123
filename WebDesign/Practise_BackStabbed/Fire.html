@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes changeColor {
+            0%   {color: red;}
+            25% {color: yellow;}
+            50% {color: blue;}
+            75% {color: green;}
+            100% {color: red;}
+        }
+
+        .name {
+            animation-name: changeColor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .moving {
+            animation-name: movingText;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes movingText {
+            0%   {transform:  perspective(1500px) rotateZ(60deg);}
+            25% {transform: rotateZ(-60deg);}
+            50% {transform: rotateZ(60deg);}
+            75% {transform: rotateZ(-60deg);}
+            100% {transform: rotateZ(60deg);}
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="name moving">Your Name</h1>
+
+</body>
+</html>
